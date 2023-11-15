@@ -28,7 +28,7 @@ const Header = ({ onMenuToggle }) => {
     const linksMobile = linksMobileRef.current
     const menuBtn = menuBtnRef.current
 
-    gsap.set(linksMobile, { autoAlpha: 0, y: 50 })
+    gsap.set(linksMobile, { autoAlpha: 0, y: -50 })
     setLinksInitialState()
 
     menuBtn.addEventListener("click", () => {
@@ -36,7 +36,7 @@ const Header = ({ onMenuToggle }) => {
       setLinksInitialState()
 
       if (isOpen) {
-        gsap.to(linksMobile, { autoAlpha: 0, y: 50, duration: 1.2 })
+        gsap.to(linksMobile, { autoAlpha: 0, y: -50, duration: 1.2 })
       } else {
         gsap.to(linksMobile, { autoAlpha: 1, y: 0, duration: 1.2 })
         linksRefs.current.forEach((link, index) => {
@@ -59,7 +59,7 @@ const Header = ({ onMenuToggle }) => {
   
     setLinksInitialState();
     if (isOpen) {
-      gsap.to(linksMobileRef.current, { autoAlpha: 0, y: 50, duration: 1.2, display: 'none' })
+      gsap.to(linksMobileRef.current, { autoAlpha: 0, y: -50, duration: 1.2, display: 'none' })
     } else {
       gsap.to(linksMobileRef.current, { autoAlpha: 1, y: 0, duration: 1.2, display: 'block' }) // Możesz zmienić 'block' na 'flex' w zależności od układu
       linksRefs.current.forEach((link, index) => {

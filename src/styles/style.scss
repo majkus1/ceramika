@@ -410,7 +410,7 @@ main {
 
         p:nth-child(1) {
           font-size: 45px;
-          animation: myAnim 2s ease 0s 1 normal forwards;
+          animation: myAnim 4s ease 0s 1 normal forwards;
           margin-bottom: 0;
 
           span {
@@ -420,7 +420,7 @@ main {
         p:nth-child(2) {
           margin-top: 10px;
           font-size: 23px;
-          animation: myAnim 2s ease 0s 1 normal forwards;
+          animation: myAnim 4s ease 0s 1 normal forwards;
           margin-bottom: 0;
 
           span {
@@ -436,7 +436,7 @@ main {
       background-color: #7f8589;
       border-left: 8px solid #7f8589;
       transform: translateX(0%);
-      animation: translateOverlay 1.8s forwards cubic-bezier(0.85, 0, 0.15, 1);
+      animation: translateOverlay 1s forwards cubic-bezier(0.85, 0, 0.15, 1);
       z-index: 2;
     }
 

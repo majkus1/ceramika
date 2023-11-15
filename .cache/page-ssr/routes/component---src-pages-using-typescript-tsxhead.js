@@ -127,14 +127,16 @@ const Header = ({
       gsap__WEBPACK_IMPORTED_MODULE_3__["default"].to(linksMobileRef.current, {
         autoAlpha: 0,
         y: 50,
-        duration: 1.2
+        duration: 1.2,
+        display: 'none'
       });
     } else {
       gsap__WEBPACK_IMPORTED_MODULE_3__["default"].to(linksMobileRef.current, {
         autoAlpha: 1,
         y: 0,
-        duration: 1.2
-      });
+        duration: 1.2,
+        display: 'block'
+      }); // Możesz zmienić 'block' na 'flex' w zależności od układu
       linksRefs.current.forEach((link, index) => {
         gsap__WEBPACK_IMPORTED_MODULE_3__["default"].to(link, {
           autoAlpha: 1,
